@@ -43,7 +43,9 @@
     float: aFloatPrint((float *)&x,len(x)))
 
 
-
+// Print function for array.
+// Support function for array print generic.
+// Support for integer and float types array.
 void aIntPrint(int *a, int size) {
 	printf("###########START#################\n");
     for(int i=0;i<size;i++) {
