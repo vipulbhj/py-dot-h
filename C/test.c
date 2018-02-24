@@ -5,10 +5,6 @@
 #include<stdio.h>
 #include "py.h"
 
-void test(char *s) {
-	println(len(s));
-}
-
 int main(int argc, char *argv) {
 	/**
 	 * Test for and and or.
@@ -36,12 +32,18 @@ int main(int argc, char *argv) {
 	println(str); // prints "abcdefghi"
 
 	/***
-	 * Testing Generic Print Function.
+	 * Testing Generic Array Print  Function.
+	 * aPrint ---------- arrayPrint
 	 * Test successful.
 	 * Tested for gcc complier c11 version.
 	*/
-	println(len(str));
-	test(str);
+
+	int arr[] = {1,2,3};
+	aPrint(arr);
+
+	float arr2[] = {1.2,2.3,3.4,6.54,1.25,1548.12};
+	aPrint(arr2);
+
 
 	return 0;
 }
